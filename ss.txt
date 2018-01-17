@@ -1,0 +1,18 @@
+import mainfunc from '../src/main';
+import { Calculator } from '../src/calculator/index';
+import { expect } from 'chai';
+import { multiply } from '../src/multiply/index';
+
+describe('Test All func',()=>{
+    var AllFunc = new mainfunc()
+beforeEach('All Function Test Module ',()=>{
+var AllFunc = new mainfunc();
+})
+it('Calculator Value + Values = result . . .',()=>{
+
+    const value1 =456;
+    const value2 =789;
+    const result = value1+value2;
+ expect(result).to.be.equals(AllFunc.calculator.plus(value1,value2))
+})
+})
